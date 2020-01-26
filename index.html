@@ -130,5 +130,33 @@
         <li><p class="connect-item">Web Design — Direct Line Development</p></li>              
       </ul>               
     </footer>
+    <div class="modal-form">
+      <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+        <p>
+          <label class="form-input" for="input-name">Name</label>
+          <input class="form-input" name="name" id="input-name" type="text">
+        </p>
+        <p>
+          <label class="form-input" for="input-phone">Phone</label>
+          <input class="form-input" name="phone" id="input-phone" type="tel">
+        </p>
+        <p>
+          <label class="form-input" for="input-email">Email</label>
+          <input class="form-input" name="email" id="input-email" type="email">
+        </p>
+        <p>
+          <label class="form-input" for="input-massage">Massage</label>
+          <textarea class="form-input" name="message" id="input-massage" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          <input class="form-input" name="accept" id="input-accept" type="checkbox" value="accept">
+          <label class="form-input" for="input-accept" >By clicking on the button, you consent to the processing of your personal data</label>
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+      <p class="contact-us-bigtext">Our support team are on-hand to assist with any issues you are experiencing.
+        Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+      <p class="contact-us-">An expert is waiting to help you!</p>
+    </div>
   </body>
 </html>
