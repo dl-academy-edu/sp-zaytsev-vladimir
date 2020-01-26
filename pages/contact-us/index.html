@@ -8,7 +8,92 @@
     <title>Contact Us</title>
   </head>
   <body>
-
+    <header class="header">
+      <a class="logo" href="../../index.html">
+        <img class="logo-image" src="../../images/logo.svg" alt="logo">
+      </a>
+      <nav class="nav-site">
+        <ul class="nav-list">
+          <li><a class="nav-item" href="../blog/index.html">BLOG</a></li>
+          <li><a class="nav-item" href="../catalog/index.html">CATALOG</a></li>
+          <li><a class="nav-item" href="#">ABOUT US</a></li>
+        </ul>
+      </nav>  
+      <a class="search-link" href="#"><img class="search-image" src="../../images/search.svg" alt="search"></a>
+      <a class="contact-link" href="../contact-us/index.html">CONTACT US</a>
+    </header>
+    <main class="main">
+      <section class="contact-us">
+        <h1 class="contact-us-title">Contact  Us</h1>
+        <span class="contact-us-way">Home</span>
+        <span class="contact-us-way"><img class="way-vector" src="../../images/vector-way.svg"></span>   
+        <span class="contact-us-way">Contact Us</span> 
+      </section>
+      <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+        <p>
+          <label class="form-input" for="input-name">Name</label>
+          <input class="form-input" name="name" id="input-name" type="text">
+        </p>
+        <p>
+          <label class="form-input" for="input-phone">Phone</label>
+          <input class="form-input" name="phone" id="input-phone" type="tel">
+        </p>
+        <p>
+          <label class="form-input" for="input-email">Email</label>
+          <input class="form-input" name="email" id="input-email" type="email">
+        </p>
+        <p>
+          <label class="form-input" for="input-massage">Massage</label>
+          <textarea class="form-input" name="message" id="input-massage" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          <input class="form-input" name="accept" id="input-accept" type="checkbox" value="accept">
+          <label class="form-input" for="input-accept" >By clicking on the button, you consent to the processing of your personal data</label>
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+      <p class="contact-us-text">Our support team are on-hand to assist with any issues you are experiencing.
+        Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+      <p class="contact-us-bigtext">An expert is waiting to help you!</p>
+    </main>
+    <footer class="footer">
+      <nav class="nav-navigation">
+        <ul class="navigation-list">
+          <li><h4 class="navigation-title">Navigation</h4></li>
+          <li><a class="navigation-item" href="#">About Us</a></li>
+          <li><a class="navigation-item" href="../blog/index.html">Blog</a></li>
+          <li><a class="navigation-item" href="#">Design Services</a></li>
+          <li><a class="navigation-item" href="#">Featured On</a></li>
+          <li><a class="navigation-item" href="#">2018 Holiday Catalog</a></li>
+          <li><a class="navigation-item" href="#">Shop By Designer</a></li> 
+          <li>
+            <p class="navigation-item">Company Rating</p>
+            <!--Звездочки-->
+          </li>       
+        </ul> 
+      </nav>
+      <nav class="nav-information">
+        <ul class="information-list">
+          <li><h4 class="information-title">Customer Information</h4></li>
+          <li><a class="information-item" href="../contact-us/index.html">Contact Us</a></li>
+          <li><a class="information-item" href="#">Sale Exclusions</a></li>
+          <li><a class="information-item" href="#">Shipping & Returns</a></li>
+          <li><a class="information-item" href="#">Terms & Conditions</a></li>
+          <li><a class="information-item" href="#">Privacy Policy</a></li>
+          <li><a class="information-item" href="#">Search</a></li>
+          <li><p class="information-item">Copyright © 2018 Dlk • Design Life Kids</p></li>        
+        </ul>
+      </nav> 
+      <ul class="connect-list">
+        <li><h4 class="connect-title">Connect</h4></li>
+        <li><form><input><button type="submit" class="join" >Join</button></form></li>
+        <li><a class="connect-item" href="#">Facebook</a></li>
+        <li><a class="connect-item" href="#">Twitter</a></li>
+        <li><a class="connect-item" href="#">Pinterest</a></li>
+        <li><a class="connect-item" href="#">Instagram</a></li> 
+        <li><p class="connect-item">Web Design — Direct Line Development</p></li>              
+      </ul>               
+    </footer>
 
   </body>
 </html>
