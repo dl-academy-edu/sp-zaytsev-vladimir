@@ -84,5 +84,14 @@ a {
   color: #AAAAAA;
 }
 
+.yellow-stars {
+  display: flex;
+  justify-content: space-between
+}
 
+
+
+.stars-list {
+  display: flex;
+}
 
