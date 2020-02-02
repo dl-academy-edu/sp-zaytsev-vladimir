@@ -1,0 +1,88 @@
+body {
+  font-family: Open Sans;
+  margin: 0;
+  color: #1E0606;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.list-hidden-marker {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.main-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.title-2 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;  
+}
+.subtitle {
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+/* header */
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.contact-link{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/* footer */
+
+.footer {
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #434343;
+  color: #FFFFFF;
+}
+
+.grey-text {
+  color: #AAAAAA;
+}
+
+
+

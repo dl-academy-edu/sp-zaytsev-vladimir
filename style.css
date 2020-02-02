@@ -1,0 +1,141 @@
+/*sliders*/
+
+.slider-1 {
+  background-color: #EEE4DB;
+}
+
+.slider-number {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.slider-button {
+  background-color: #D6CAC2;
+}
+
+.slider-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+.slider-text {
+  font-family: Crimson Text;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.slider-discount-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background-color: #C29974;
+}
+
+/* products*/
+
+.product-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.product-link {
+
+}
+
+
+
+.toys-filter {
+  background-color: rgba(125, 151, 218, 0.2);;
+}
+
+.toy-name {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.toy-price {
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+}
+
+.page-navigation {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-navigation-list {
+  display: flex;  
+}
+
+
+.breadcrumbs {
+  font-family: Crimson Text;
+  font-style: italic;  
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/*Blog*/
+.blog-preview-data {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  color: #818181;
+}
+
+.blog-preview-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.blog-preview-text {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/*contact us*/
+
+.contact-us-form {
+  background-color: #E5EAF8;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contact-us-bigtext {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  color: #C29974;
+}
+
