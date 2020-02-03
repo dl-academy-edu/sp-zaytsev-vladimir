@@ -38,9 +38,20 @@
   line-height: 16px;
   color: #FFFFFF;
   background-color: #C29974;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 10px;
+  margin: 0 auto;
+}
+
+.slider-1 {
+  display: flex;
 }
 
 /* products*/
+
+
 
 .product-title {
   font-family: Montserrat;
@@ -59,6 +70,48 @@
 
 }
 
+.desception {
+  display: flex;
+  
+}
+
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 0;
+}
+
+.delivery-title {
+  margin-top: 30px;
+  margin-bottom: 6px;
+}
+
+.delivery-list {
+  padding:0;
+  margin:0;  
+}
+
+.delivery-text {
+  margin-bottom: 26px;
+}
+
+.delivery-image {
+  padding-right: 60px;
+}
+
+.delivery-text-container {
+  width: 540px;
+}
+
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dlk-contact {
+  display: flex;
+}
 
 
 .toys-filter {

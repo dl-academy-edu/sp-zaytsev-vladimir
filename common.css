@@ -2,6 +2,7 @@ body {
   font-family: Open Sans;
   margin: 0;
   color: #1E0606;
+  background-color: #FFFFFF;
 }
 
 a {
@@ -28,6 +29,15 @@ a {
   line-height: 22px;
   background-color: #000000;
   color: #FFFFFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 9px 22px;
+
+  width: 161px;
+  min-height: 40px;
 }
 
 .main-title {
@@ -54,15 +64,44 @@ a {
 
 /* header */
 
+.header {
+  padding: 50px 0px;
+  display: flex;
+}
+
 .header-content {
   display: flex;
+  
+}
+
+.header-nav {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
+}
+
+.header-link-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 60px;
+  padding-left: 0px;  
+}
+
+.header-link-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:150px;
+  padding-left: 0;
 }
 
 .nav-item {
   font-size: 14px;
   line-height: 19px;
   color: #000000;
+  margin-right: 20px;
+
 }
 
 .contact-link{
@@ -78,6 +117,22 @@ a {
   line-height: 22px;
   background-color: #434343;
   color: #FFFFFF;
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socials-list {
+  padding-left: 0px;
+}
+
+.footer-navigation-list {
+  padding-left: 0px;
 }
 
 .grey-text {
@@ -85,10 +140,13 @@ a {
 }
 
 .yellow-stars {
-  display: flex;
-  justify-content: space-between
+  
 }
 
+.button-star {
+  background: transparent;
+  border: 0;
+}
 
 
 .stars-list {
