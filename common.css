@@ -7,6 +7,11 @@ body {
 
 a {
   text-decoration: none;
+  color: #1E0606;
+}
+
+.white-link {
+  color: #FFFFFF;
 }
 
 .container {
@@ -29,14 +34,11 @@ a {
   line-height: 22px;
   background-color: #000000;
   color: #FFFFFF;
-
   display: flex;
   justify-content: center;
   align-items: center;
   
-  padding: 9px 22px;
-
-  width: 161px;
+  padding: 9px 22px;  
   min-height: 40px;
 }
 
@@ -54,6 +56,7 @@ a {
   font-size: 38px;
   line-height: 46px;  
 }
+
 .subtitle {
   font-family: Crimson Text;
   font-style: italic;
@@ -62,11 +65,29 @@ a {
   line-height: 32px;
 }
 
+.button-2 {
+  background: transparent;
+  border: 0;
+}
+
+.breadcrumbs-list {
+  padding: 0;
+  display: flex;
+}
+
 /* header */
 
 .header {
   padding: 50px 0;
   display: flex;  
+}
+
+.header-logo-image:hover {
+  opacity: 0.5;
+}
+
+.header-logo-image:active {
+  opacity: 0.3;
 }
 
 .header-nav {
@@ -80,6 +101,7 @@ a {
   margin-left: 60px;
   padding-left: 0;    
 }
+
 .header-contact-list {
   display: flex;
   justify-content: space-between;
@@ -93,6 +115,14 @@ a {
   margin-right: 20px;  
 }
 
+.header-nav-item:hover {
+  font-weight: 600;
+}
+
+.header-nav-item:active {
+  font-weight: bold;
+}
+
 .header-contact-link{
   font-weight: bold;
   font-style: normal;
@@ -101,8 +131,24 @@ a {
   text-transform: uppercase;
 }
 
+.header-contact-link:hover {
+  font-weight: 600;
+}
+
+.header-contact-link:active {
+  font-weight: normal;
+}
+
 .header-search-link {
   margin-right: 23px;
+}
+
+.header-search-link:hover {
+  opacity: 0.5;
+}
+
+.header-search-link:active {
+  opacity: 0.3;
 }
 
 /* footer */
@@ -113,13 +159,34 @@ a {
   background-color: #434343;
   color: #FFFFFF;
   padding: 100px 0;
+}
+
+.footer-section { 
+  width: 32%;
+
+}
+
+.footer-block {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-information {
-  display: flex;
-  justify-content: space-between;
+.footer-title {   
+  margin: 0;
+  padding-bottom: 23px;
+}
+
+.top-line {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #666666;
+}
+
+.bottom-line {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #666666;
+  
 }
 
 .footer-socials-list {
@@ -127,7 +194,27 @@ a {
 }
 
 .footer-navigation-list {
-  padding-left: 0;
+  margin: 0;
+  padding: 28px 0; 
+}
+
+.footer-navigation-item {
+  margin-bottom: 15px;
+}
+
+.footer-navigation-link:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-navigation-link:active {
+  font-weight: 600;
+  cursor: none;
+}
+
+.footer-text {
+  margin: 0;
+  margin-top: 23px;
 }
 
 .grey-text {
@@ -135,16 +222,112 @@ a {
 }
 
 .yellow-stars {
-  
+  margin: 0;
+  margin-top: 23px; 
+  display: flex;
+  align-items: center;  
+}
+
+.star-text {
+  margin:0;
+}
+
+.stars-list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-item {
+  margin-right: 2.88px;
 }
 
 .button-star {
-  background: transparent;
-  border: 0;
+  padding: 0;
 }
 
-
-.stars-list {
+.footer-form {  
   display: flex;
+  margin: 25px 0;
 }
 
+.footer-input {
+  background-color: #666666;
+  color: #EBEBEB;
+  border-width: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 9px 0;
+  padding-left: 15px;  
+}
+
+.footer-input:hover {
+  cursor: pointer;
+  border: 1px; 
+  border-style: solid;
+  border-color: white;
+}
+
+.footer-input:active {
+  cursor: none;
+  border: 1px; 
+  border-style: solid;
+  border-color: white;
+  background-color: #FFFFFF;
+  color: #1E0606;
+}
+
+.footer-button {
+  border-width: 0;
+}
+
+.footer-socials-list {
+  display: flex;
+  margin-bottom: 167px;
+}
+
+.footer-socials-item {
+  width: 30px;
+  height: 30px;
+  background-color: #666666;
+  background-image: url(/images/social-1.svg);
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.footer-socials-item:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.footer-socials-item:active {
+  opacity: 0.5;
+  cursor: none;
+}
+
+.footer-socials-item:nth-child(2) {
+  background-image: url(/images/social-2.svg);
+}
+
+.footer-socials-item:nth-child(3) {
+  background-image: url(/images/social-3.svg);
+}
+
+.footer-socials-item:nth-child(4) {
+  background-image: url(/images/social-4.svg);
+}
+
+.dl-info:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dl-info:active {
+  color: #FFFFFF;
+  cursor: none;
+  text-decoration: underline;
+}
