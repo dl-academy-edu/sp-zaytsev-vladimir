@@ -82,16 +82,32 @@
   text-shadow: 0 0 40px rgba(147, 3, 3, 0.25);
 }
 
+.product-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.product-title:active {
+  cursor: none;
+  text-decoration: underline;
+}
+
 .product-container {
   background-color: #DBE4DB;
   padding: 46px 18px;
-}
+} 
 
 .products-list {
   display: flex;
   align-items: center;
   padding: 0;
   margin: 30px -10px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-item {
@@ -106,6 +122,19 @@
   top: 50%;
   left: 50%;
   transform: translate( -50%, -50%);
+}
+
+.product-desception {
+  width: 680px;
+  margin-bottom:60px;
+}
+
+.desc-title {
+  margin:25px 0;
+}
+
+.desc-text {
+  margin:15px 0;
 }
 
 .desception {
@@ -126,45 +155,12 @@
   width: 580px;
 }
 
+/*delivery*/
+
 .delivery {
   display: flex;
-  justify-content: space-between;
   margin-top: 90px;
-  margin-bottom: 90px;
-}
-
-.delivery-title {
-  margin-top: 30px;
-  margin-bottom: 8px;
-  padding-left: 60px;
-}
-
-.delivery-list {
-  padding:0;
-  margin:0; 
-}
-
-.delivery-button:active {
-  border: 0;
-}
-
-.delivery-item {
-  padding-left: 60px;
-}
-
-.delivery-item:active {
-  background-color: #E1F0F7;
-
-}
-
-.delivery-text {
-  margin-bottom: 26px;
-  padding-left: 60px;
-}
-
-.delivery-link {
-  display: inline-block;
-  padding-left: 60px;
+  margin-bottom: 90px;  
 }
 
 .delivery-image {
@@ -172,8 +168,46 @@
 }
 
 .delivery-text-block {
-  padding : 0;
+  padding-left: 60px;
 }
+
+.delivery-title {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.delivery-list {
+  padding:0;
+  margin:0;
+  margin-bottom: 19px; 
+}
+
+.delivery-button{
+  width:326px;
+  margin-left:-60px;
+  padding: 11px 0;
+  padding-left: 60px;
+  display: flex;
+  justify-content: start;
+  box-sizing: border-box;
+}
+
+.delivery-button:hover {
+  background-color: #E1F0F7;
+}
+
+.delivery-text {
+  width: 480px;
+  margin-bottom: 15px;
+}
+
+.delivery-link {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+
+
 
 /*partners*/
 
@@ -185,6 +219,8 @@
   margin-bottom: 109px;
   padding: 0;
 }
+
+/*dlk*/
 
 .dlk-contact {  
   display: flex;
@@ -198,17 +234,18 @@
   margin-right: 57px;  
   background-color: #E1F0F7;
   position: relative;
+  padding-bottom: 35px;
 }
 
 .dlk-title {
-  position: absolute;
-  transform: translateY(-50%);
-  margin: 0;
+  margin-top: -24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .dlk-subtitle {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 10px;
   margin-bottom: 10px;  
 }
 
@@ -219,7 +256,6 @@
 
 .dlk-about-link {
   display: inline-block;
-  margin-bottom:35px;
 }
 
 .contacts-map {
@@ -230,20 +266,18 @@
 }
 
 .contacts-title {
-  position: absolute;
-  transform: translateY(-50%);
-  margin: 0;
+  margin-top: -24px;
+  margin-bottom: 20px;
 }
 
 .contacts-map-text {
   margin: 0;
-  margin-top: 41px;
 }
 
 .contatcs-map-image {
-  position: absolute;
-  transform: translateY(-50%);
+  margin-bottom: -60px;
 }
+
 
 .toys-filter {
   background-color: rgba(125, 151, 218, 0.2);;
@@ -262,6 +296,8 @@ line-height: 22px;
 text-align: center;
 }
 
+/*page navigation*/
+
 .page-navigation {
   font-family: Montserrat;
   font-weight: bold;
@@ -269,12 +305,17 @@ text-align: center;
   line-height: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-navigation-list {
-  display: flex;  
+  display: flex;   
 }
 
+
+.page-navigation-item {
+  margin: 0 64px;
+}
 
 .breadcrumbs {
   font-family: Crimson Text;
@@ -286,17 +327,29 @@ text-align: center;
 /*Blog*/
 
 .blog-content {
-  display: flex;
-  align-self: ;
+  padding-bottom: 60px;
 }
 
+.blogs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  margin-bottom: 30px;
+}
 
+.blog-preview {
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
 .blog-preview-data {
   font-family: Roboto;
   font-size: 16px;
   line-height: 19px;
   color: #818181;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .blog-preview-title {
@@ -304,6 +357,7 @@ text-align: center;
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
+  margin-bottom: 15px;
 }
 
 .blog-preview-text {
@@ -313,13 +367,26 @@ text-align: center;
 
 /*contact us*/
 
+.contact-us-block-content {
+  display: flex;
+  padding-bottom: 60px;
+}
+
 .contact-us-form {
+  max-width: 680px;
+  margin-right: 60px;
+  padding: 42px 40px;
   background-color: #E5EAF8;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+}
+
+.contact-us-text {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .contact-us-bigtext {

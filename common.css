@@ -35,11 +35,13 @@ a {
   background-color: #000000;
   color: #FFFFFF;
   padding: 9px 22px;  
+  text-align: center;
 }
 
 .button:hover {
   cursor: pointer;
   background-color: #C29974; 
+  transition: 0.5s;
 }
 
 .button:active {
@@ -60,6 +62,7 @@ a {
   font-weight: bold;
   font-size: 38px;
   line-height: 46px;  
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -77,7 +80,11 @@ a {
 
 .breadcrumbs-list {
   padding: 0;
-  display: flex;
+  display: flex;  
+}
+
+.breadcrumbs-item {
+  margin-right: 20px;
 }
 
 /* header */
@@ -89,6 +96,7 @@ a {
 
 .header-logo-image:hover {
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .header-logo-image:active {
@@ -122,6 +130,7 @@ a {
 
 .header-nav-item:hover {
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .header-nav-item:active {
@@ -139,6 +148,7 @@ a {
 
 .header-contact-link:hover {
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .header-contact-link:active {
@@ -151,6 +161,7 @@ a {
 
 .header-search-link:hover {
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .header-search-link:active {
@@ -167,32 +178,32 @@ a {
   padding: 100px 0;
 }
 
+.footer-block-content {
+  margin: 0 -10px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-section-content { 
   width: 33.33%;
   padding: 0 10px;
   box-sizing: border-box;
 }
 
-.footer-section-information { 
-  width: 33.33%;
-  margin: 0;
-  padding-right: 20px;
-  margin-right: 20px;
-  box-sizing: border-box;
-}
-
-.footer-block-content {
-  margin: 0 -10px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .footer-block-information{
   padding-top: 23px;
+  margin: 0 -10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
 
+.footer-section-information { 
+  margin: 0;
+  width: 33.33%;
+  margin-right: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .footer-title {   
@@ -231,6 +242,7 @@ a {
 .footer-navigation-link:hover {
   opacity: 0.5;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .footer-navigation-link:active {
@@ -286,25 +298,19 @@ a {
 }
 
 .footer-input:hover {
-  cursor: pointer;
-  border: 1px; 
-  border-style: solid;
-  border-color: white;
+  cursor: pointer;  
+  border-color: #FFFFFF;
   
 }
 
 .footer-input:active {
   cursor: none;
-  border: 1px; 
-  border-style: solid;
   border-color: white;
   background-color: #FFFFFF;
   color: #1E0606;
 }
 
 .footer-input:focus {
-  border: 1px; 
-  border-style: solid;
   border-color: white;
   background-color: #FFFFFF;
   color: #1E0606;
@@ -332,6 +338,7 @@ a {
 .footer-socials-item:hover {
   opacity: 0.5;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .footer-socials-item:active {
@@ -355,6 +362,7 @@ a {
   color: #FFFFFF;
   cursor: pointer;
   text-decoration: underline;
+  transition: 0.5s;
 }
 
 .dl-info:active {

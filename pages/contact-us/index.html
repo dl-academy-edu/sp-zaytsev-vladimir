@@ -39,39 +39,43 @@
         </ul> 
       </nav>                        
     </header>
-    <main class="main">
-      <h1 class="main-title">Contact Us</h1>
+    <main class="contact-us-block container">
+      <h1 class="contact-us-block-title main-title">Contact Us</h1>
       <ul class="breadcrumbs list-hidden-marker">
         <li><a class="breadcrumbs-link" href="/index.html">Home</a></li>
         <li><span class="breadcrumbs-item"><img class="way-vector" src="/images/vector-way.svg" alt="search"></span></li>
         <li><span class="breadcrumbs-item">Contact Us</span></li>
-      </ul>     
-      <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-        <p>
-          <label class="llabel-input" for="input-name">Name</label>
-          <input class="form-input" name="name" id="input-name" type="text">
-        </p>
-        <p>
-          <label class="form-input" for="input-phone">Phone</label>
-          <input class="form-input" name="phone" id="input-phone" type="tel">
-        </p>
-        <p>
-          <label class="label-input" for="input-email">Email</label>
-          <input class="form-input" name="email" id="input-email" type="email">
-        </p>
-        <p>
-          <label class="label-input" for="input-massage">Massage</label>
-          <textarea class="form-input" name="message" id="input-massage" cols="30" rows="10"></textarea>
-        </p>
-        <p>
-          <input class="form-input" name="accept" id="input-accept" type="checkbox" value="accept">
-          <label class="label-input" for="input-accept" >By clicking on the button, you consent to the processing of your personal data</label>
-        </p>
-        <button type="submit">Submit</button>
-      </form>
-      <p class="contact-us-text">Our support team are on-hand to assist with any issues you are experiencing.
-        Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-      <p class="contact-us-bigtext">An expert is waiting to help you!</p>
+      </ul>
+      <div class="contact-us-block-content">
+        <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+          <p>
+            <label class="llabel-input" for="input-name">Name</label>
+            <input class="form-input" name="name" id="input-name" type="text">
+          </p>
+          <p>
+            <label class="form-input" for="input-phone">Phone</label>
+            <input class="form-input" name="phone" id="input-phone" type="tel">
+          </p>
+          <p>
+            <label class="label-input" for="input-email">Email</label>
+            <input class="form-input" name="email" id="input-email" type="email">
+          </p>
+          <p>
+            <label class="label-input" for="input-massage">Massage</label>
+            <textarea class="form-input" name="message" id="input-massage" cols="30" rows="10"></textarea>
+          </p>
+          <p>
+            <input class="form-input" name="accept" id="input-accept" type="checkbox" value="accept">
+            <label class="label-input" for="input-accept" >By clicking on the button, you consent to the processing of your personal data</label>
+          </p>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-us-text-block">
+          <p class="contact-us-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+          <p class="contact-us-text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+          <p class="contact-us-bigtext">An expert is waiting to help you!</p>
+        </div>
+      </div>          
     </main>
     <footer class="footer">
       <section class="footer-content">
