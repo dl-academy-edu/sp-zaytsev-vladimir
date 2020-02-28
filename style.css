@@ -7,7 +7,7 @@
 .slider-block {
   background-color: #EEE4DB;
   display: flex;
-  padding: 0 28px; 
+  padding: 0 31px; 
 }
 
 .slider-control-number {
@@ -20,15 +20,25 @@
 }
 
 .sliders-buttons-list {
-  padding 0;
+  padding: 0;
 }
 
+
+
 .slider-button{
+  box-sizing: border-box;
   background-color: #D6CAC2;
   padding: 0;
   border: 0;
   width: 31px;
   height: 3px;
+}
+
+.slider-image {
+  position: absolute;
+  bottom: -3px;
+  left:300px;
+  
 }
 
 .slider-title {
@@ -45,6 +55,12 @@
   line-height: 25px;
 }
 
+.slider-1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .slider-discount-text {
   font-family: Open Sans;
   font-style: normal;
@@ -53,17 +69,11 @@
   line-height: 16px;
   color: #FFFFFF;
   background-color: #C29974;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 11px 10px;
   margin: 0 auto;
+  text-transform: uppercase;
 }
-
-.slider-1 {
-  display: flex;
-}
-
 
 /* products*/
 
@@ -82,13 +92,13 @@
   text-shadow: 0 0 40px rgba(147, 3, 3, 0.25);
 }
 
-.product-title:hover {
+.product-item:hover {
   cursor: pointer;
   text-decoration: underline;
   transition: 0.5s;
 }
 
-.product-title:active {
+.product-link:active {
   cursor: none;
   text-decoration: underline;
 }
@@ -187,8 +197,7 @@
   margin-left:-60px;
   padding: 11px 0;
   padding-left: 60px;
-  display: flex;
-  justify-content: start;
+  text-align: start;
   box-sizing: border-box;
 }
 
@@ -224,9 +233,8 @@
 
 .dlk-contact {  
   display: flex;
-  justify-content: start;
-  padding-bottom: 60px;
-  
+  justify-content: space-between;
+  padding-bottom: 60px;  
 }
 
 .dlk-about { 
@@ -275,12 +283,38 @@
 }
 
 .contatcs-map-image {
-  margin-bottom: -60px;
+  position: absolute;
+  top:55%;
+  margin-bottom: 60px;
+}
+/*Toys*/
+
+.toys-content {
+  padding: 60px 0;
 }
 
+.toys-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  margin-bottom: 50px;
+}
+
+.toy-preview {
+  max-width: 33.33%;
+  margin: 10px;
+  block-size: border-box;
+}
 
 .toys-filter {
-  background-color: rgba(125, 151, 218, 0.2);;
+  background-color: rgba(125, 151, 218, 0.2);
+}
+
+.toys-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 0;
 }
 
 .toy-name {
@@ -294,6 +328,93 @@ font-weight: bold;
 font-size: 16px;
 line-height: 22px;
 text-align: center;
+}
+
+.toy-form-section-list {
+  padding: 0;
+  margin: 15px 0;
+}
+
+.toy-form-section-item {
+  margin-bottom: 15px;
+}
+
+.toy-form-section-name {
+  font-weight: bold;
+  padding: 0;
+}
+
+.filter-button {
+  align-self: center;
+}
+
+.input-color-indicator {
+  padding-left:30px;
+  position: relative;
+}
+
+.input-color-indicator::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 19px;
+  border: 2px solid #C29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.input-color:checked + .input-color-indicator::after {
+  position: absolute;
+  content: "";
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url(/images/checkbox.svg);
+}
+
+.form-toy-radio {
+  display:flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.input-radio-indicator {
+  position: relative;
+  padding-left:30px;
+}
+
+.input-radio-indicator::before {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C29974;
+  border-radius: 100%;
+}
+
+.input-radio:checked + .input-radio-indicator::after{
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  background-color: #C29974;
+}
+
+.amount-content {
+  display: flex;
 }
 
 /*page navigation*/
@@ -369,19 +490,13 @@ text-align: center;
 
 .contact-us-block-content {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 60px;
+
 }
 
-.contact-us-form {
-  max-width: 680px;
-  margin-right: 60px;
-  padding: 42px 40px;
-  background-color: #E5EAF8;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
+.contact-us-text-block {
+  width: 30%;
 }
 
 .contact-us-text {

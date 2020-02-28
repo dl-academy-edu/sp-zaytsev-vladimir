@@ -46,68 +46,81 @@
         <li><span class="breadcrumbs-item"><img class="way-vector" src="/images/vector-way.svg" alt="search"></span></li>
         <li><span class="breadcrumbs-item">Toys</span></li>
       </ul>
-      <section class="toys-filter">
-        <form class="toys-form" action="" method="">
-          <fieldset>
-            <legend>Cost</legend>
+      <section class="toys-filter">        
+        <form class="toys-form container" action="" method="">
+          <fieldset class="fieldset-border-none toy-form-section">
+            <legend class="toy-form-section-name">Cost</legend>
             <label for="">0</label>
-            <input id="" type="range" name="" min="0" max="500" value="250">
+            <input class="" type="range" name="" min="0" max="500" value="250">
             <label for="">500</label>
           </fieldset>
-          <fieldset>
-            <legend>Color</legend>
-            <ul>
-              <li>
-                <input id="" name="" type="checkbox" value="">
-                <label for="" >Black</label>
+          <fieldset class="fieldset-border-none toy-form-section">
+            <legend class="toy-form-section-name">Color</legend>
+            <ul class="toy-form-section-list list-hidden-marker">
+              <li class="toy-form-section-item">
+                <input  class="input-color hidden" name="color-toys" type="checkbox" id="input-color-black" value="black">
+                <span class="input-color-indicator"></span>
+                <label class="label-color" for="input-color-black">Black</label>
               </li>
-              <li>
-                <input id="" name="" type="checkbox" value="">
-                <label for="">Blue</label>
+              <li class="toy-form-section-item">
+                <input class="input-color hidden" name="color-toys" type="checkbox" id="input-color-blue" value="blue">
+                <span class="input-color-indicator"></span>
+                <label class="label-color" for="input-color-blue">Blue</label>
               </li>
-              <li>
-                <input id="" name="" type="checkbox" value="">
-                <label for="">Green</label>
+              <li class="toy-form-section-item">
+                <input class="input-color hidden" name="color-toys" type="checkbox" id="input-color-green" value="green">
+                <span class="input-color-indicator"></span>
+                <label class="label-color" for="input-color-green">Green</label>
               </li>
-              <li>
-                <input id="" name="" type="checkbox" value="">
-                <label for="">White</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Delivery</legend>
-            <ul>
-              <li>
-                <input id="" name="" type="radio" value="">
-                <label for="">Free shipping</label>
-              </li>
-              <li>
-                <input id="" name="" type="radio" value="">
-                <label for="">Fast shipping</label>
+              <li class="toy-form-section-item">
+                <input class="input-color hidden" name="color-toys" type="checkbox" id="input-color-white" value="white">
+                <span class="input-color-indicator"></span>
+                <label class="label-color" for="input-color-white">White</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Amount</legend>
-            <ul>
-              <li>
-                <button type="submit">0-5</button>
+          <fieldset class="fieldset-border-none toy-form-section">
+            <legend class="toy-form-section-name">Delivery</legend>
+            <ul class="toy-form-section-list list-hidden-marker">
+              <li class="toy-form-section-item">
+                <div class="form-toy-radio">
+                  <input class="input-radio hidden" id="input-free-shipping" name="shipping-methods" type="radio" value="free">
+                  <span class="input-radio-indicator"></span>  
+                  <label class="label-radio" for="input-free-shipping">Free shipping</label>                                  
+                </div>                
               </li>
-              <li>
-                <button type="submit">10-20</button>
-              </li>
-              <li>
-                <button type="submit">20-50</button>
+              <li class="toy-form-section-item">
+                <div class="form-toy-radio">
+                  <input class="input-radio hidden" id="input-fast-shipping" name="shipping-methods" type="radio" value="fast" checked>
+                  <span class="input-radio-indicator"></span>
+                  <label class="label-radio" for="input-fast-shipping">Fast shipping</label>                  
+                </div>                
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Apply</button>
+          <fieldset class="fieldset-border-none toy-form-section">
+            <legend class="toy-form-section-name">Amount</legend>
+            <ul class="toy-form-section-list amount-content list-hidden-marker">
+              <li class="toy-form-section-item">
+                <input class="hidden" type="radio" name="" value="">
+                <label class="" for="">0-5</label>
+              </li>
+              <li class="toy-form-section-item">
+                <input class="hidden" type="radio" name="" value="">
+                <label class="" for="">10-20</label>
+              </li>
+              <li class="toy-form-section-item">
+                <input class="hidden" type="radio" name="" value="">
+                <label class="" for="">20-50</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-button button" type="submit">Apply</button>
         </form>        
       </section>
-      <section class="toys-content">
+      <section class="toys-content container">
         <h2 class="hidden">toys</h2>
-        <section class="toys-list">
+        <div class="toys-list ">
           <article class="toy-preview">
             <a class="toy-link" href="#">
               <img class="toy-image" src="/images/toy-1.png" alt="toy">
@@ -150,8 +163,8 @@
               <p class="toy-price">$56.00 USD</p>
             </a>
           </article>
-        </section>
-        <section class="page-navigation">
+        </div>
+        <div class="page-navigation">
           <span><a class="page-navigation-control"><img src="/images/left-vector.svg" alt="vetor"></a></span>
           <ul class="page-navigation-list list-hidden-marker">
             <li><a class="page-navigation-item">1</a></li>
@@ -160,7 +173,7 @@
             <li><a class="page-navigation-item">4</a></li>
           </ul>
           <span><a class="page-navigation-control"><img src="/images/right-vector.svg" alt="vetor"></a></span>
-        </section>        
+        </div>        
       </section>        
     </main>
     <footer class="footer">

@@ -28,14 +28,22 @@ a {
   display: none;
 }
 
+.fieldset-border-none {
+  border: none;
+  width: fit-content;
+  padding: 0;
+}
+
 .button {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   background-color: #000000;
   color: #FFFFFF;
+  border: 0;
   padding: 9px 22px;  
   text-align: center;
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -76,6 +84,7 @@ a {
 .button-2 {
   background: transparent;
   border: 0;
+  
 }
 
 .breadcrumbs-list {
@@ -370,3 +379,85 @@ a {
   cursor: none;
   text-decoration: underline;
 }
+
+/*Contact Us form*/
+
+.contact-us-form {
+  max-width: 680px;
+  margin-right: 60px;
+  padding: 42px 40px;
+  background-color: #E5EAF8;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-wrapper600 {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.form-wrapper290 {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.label-input {
+  margin-bottom: 6px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-input {
+  padding: 14px 0;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.form-checkbox-wrapper {
+  margin-bottom: 20px;
+}
+
+.form-checkbox-indicator {
+  padding-left:30px;
+  position: relative;
+}
+
+.form-checkbox-indicator::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 19px;
+  border: 2px solid #C29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.input-form-checkbox:checked + .form-checkbox-indicator::after {
+  position: absolute;
+  content: "";
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url(/images/checkbox.svg);
+  
+}
+
