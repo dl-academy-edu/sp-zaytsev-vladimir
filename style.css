@@ -1,13 +1,16 @@
 /*sliders*/
 
 .main-sliders {
-    
+  margin-bottom: 90px;
 }
 
 .slider-block {
+  position: relative;
   background-color: #EEE4DB;
   display: flex;
-  padding: 0 31px; 
+  padding: 0 133px;
+  padding-top: 90px;
+  padding-bottom: 89px; 
 }
 
 .slider-control-number {
@@ -17,18 +20,31 @@
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .sliders-buttons-list {
-  padding: 0;
+  padding: 0 3px;
+  margin:0;
 }
 
+.slider-control {
+  position: absolute;
+  top:17px;
+  left:28px;
+}
 
+.slider-button-item {
+  width: 31px;
+  height: 3px;
+  margin-bottom: 11px;
+  display: flex;
+  align-items: center;
+}
 
 .slider-button{
   box-sizing: border-box;
   background-color: #D6CAC2;
-  padding: 0;
   border: 0;
   width: 31px;
   height: 3px;
@@ -36,12 +52,17 @@
 
 .slider-image {
   position: absolute;
-  bottom: -3px;
-  left:300px;
-  
+  right:100px;
+  bottom:0;
+}
+
+.slider-desc {
+  width: 307px;
 }
 
 .slider-title {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: Montserrat;
   font-weight: bold;
   font-size: 40px;
@@ -53,12 +74,15 @@
   font-style: italic;
   font-size: 20px;
   line-height: 25px;
+  margin:20px 0;
 }
 
 .slider-1 {
   display: flex;
-  align-items: center;
-  position: relative;
+}
+
+.slider-link {
+  display: inline-block;
 }
 
 .slider-discount-text {
@@ -71,7 +95,7 @@
   background-color: #C29974;
   text-align: center;
   padding: 11px 10px;
-  margin: 0 auto;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -205,6 +229,14 @@
   background-color: #E1F0F7;
 }
 
+.delivery-button:active {
+  background-color: #E1F0F7;
+}
+
+.delivery-button:focus {
+  background-color: #E1F0F7;
+}
+
 .delivery-text {
   width: 480px;
   margin-bottom: 15px;
@@ -233,8 +265,9 @@
 
 .dlk-contact {  
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 60px;  
+  justify-content: start;
+  padding-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 .dlk-about { 
@@ -284,9 +317,9 @@
 
 .contatcs-map-image {
   position: absolute;
-  top:55%;
-  margin-bottom: 60px;
+  top:calc(100% - 80px);
 }
+
 /*Toys*/
 
 .toys-content {

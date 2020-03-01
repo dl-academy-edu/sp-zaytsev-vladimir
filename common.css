@@ -100,7 +100,9 @@ a {
 
 .header {
   padding: 50px 0;
-  display: flex;  
+  display: flex;
+  margin-bottom: 75px;
+
 }
 
 .header-logo-image:hover {
@@ -114,7 +116,7 @@ a {
 
 .header-nav {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between; 
   width: 100%;
 }
 
@@ -300,8 +302,7 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 9px 0;
-  padding-left: 15px; 
+  padding: 9px 15px;
   box-sizing: border-box; 
 
 }
