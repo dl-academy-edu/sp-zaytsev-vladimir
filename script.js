@@ -16,6 +16,7 @@ buttonClose.addEventListener("click", function() {
 
 window.addEventListener("keydown", function (event) {
     if (event.code == "Escape" && !modalForm.classList.contains("modal-form_none")) {
-        modalForm.classList.add("modal-form_none");        
+        modalForm.classList.add("modal-form_none");
+        button.focus();        
     }
 });
