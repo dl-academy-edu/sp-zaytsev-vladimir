@@ -163,7 +163,7 @@ a {
 }
 
 .header-search-link {
-  margin-right: 25px;
+  margin-right: 24px;
 }
 
 .header-logo-link, .header-nav-link, .header-search-link, .header-contact-link{  
@@ -237,9 +237,7 @@ a {
 
 .footer-navigation-list {
   margin: 0;
-  padding: 0;
-  padding-top: 28px;
-  padding-bottom: 13px; 
+  padding: 28px 0 13px 0; 
 }
 
 .footer-navigation-item {
@@ -266,8 +264,7 @@ a {
 }
 
 .star-text {
-  margin:0;
-  margin-right: 28px;
+  margin:0 28px 0 0;
 }
 
 .stars-list {
@@ -437,12 +434,17 @@ a {
   margin-bottom: 20px;
 }
 
+.opacity {
+  opacity: 0;
+}
+
 .form-checkbox-indicator {
+  margin-left: -24px;
   padding-left:30px;
   position: relative;
 }
 
-.form-checkbox-indicator:hover {
+.form-checkbox-indicator:hover, .input-form-checkbox:focus + .form-checkbox-indicator{
   text-decoration: underline;
   cursor: pointer;
 }
