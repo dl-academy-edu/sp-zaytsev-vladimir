@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" type="text/css" href="/style.css"> 
     <title>DLK</title>
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/svg">
   </head>
   <body>
     <header class="header container">
@@ -45,7 +46,7 @@
           <div class="slider-control">
             <p class="slider-control-number">01</p>
             <ul class="sliders-buttons-list list-hidden-marker">
-              <li class="slider-button-item"><button class="slider-button"></button></li>
+              <li class="slider-button-item"><button class="slider-button slider-button__one"></button></li>
               <li class="slider-button-item"><button class="slider-button"></button></li>
               <li class="slider-button-item"><button class="slider-button"></button></li>
               <li class="slider-button-item"><button class="slider-button"></button></li>
@@ -56,7 +57,7 @@
               <div class="slider-desc">
                 <p class="slider-title">THE OOH NOO COLLECTION</p>
                 <p class="slider-text">Disagned in Slovenia</p>
-                <a class="slider-link button" href="#">EXPLORE NOW</a>
+                <button class="slider-link button slider-link_js">EXPLORE NOW</button>
               </div>          
               <h2 class="hidden">Slider</h2>          
               <img class="slider-image" src="/images/slider.png" alt="slider">          
@@ -125,7 +126,7 @@
         <div class="delivery-text-block">
           <h2 class="delivery-title title-2">DELIVERY</h2>        
           <ul class="delivery-list list-hidden-marker">
-            <li class="delivery-item"><button class="delivery-button button-2 subtitle" focus>Delivery</button></li>
+            <li class="delivery-item"><button class="delivery-button button-2 subtitle button__background">Delivery</button></li>
             <li class="delivery-item"><button class="delivery-button button-2 subtitle">Guarantee</button></li>
             <li class="delivery-item"><button class="delivery-button button-2 subtitle">Credit</button></li>
           </ul> 
@@ -159,7 +160,7 @@
     </main>
     <footer class="footer">
       <div class="footer-wrapper container">
-        <div class="footer-block-content bottom-line">
+        <div class="footer-block-content">
           <div class="footer-section-content">
             <p class="footer-title bottom-line grey-text">Navigation</p>
             <nav class="footer-navigation">
@@ -193,53 +194,58 @@
               <button class="button footer-button" type="submit" value="join">JOIN</button>              
             </form>
             <ul class="footer-socials-list list-hidden-marker">
-                <li class="footer-socials-item"><a class="footer-socials-link"><span class="hidden">Facebook</span></a></li>
-                <li class="footer-socials-item"><a class="footer-socials-link"><span class="hidden">Twitter</span></a></li>
-                <li class="footer-socials-item"><a class="footer-socials-link"><span class="hidden">Pinteres</span></a></li>
-                <li class="footer-socials-item"><a class="footer-socials-link"><span class="hidden">Instagramm</span></a></li>
+              <li class="footer-socials-item"><a class="footer-socials-link footer-socials-link__facebook" href="#"><span class="hidden">Facebook</span></a></li>
+              <li class="footer-socials-item"><a class="footer-socials-link footer-socials-link__twitter" href="#"><span class="hidden">Twitter</span></a></li>
+              <li class="footer-socials-item"><a class="footer-socials-link footer-socials-link__pinterest" href="#"><span class="hidden">Pinteres</span></a></li>
+              <li class="footer-socials-item"><a class="footer-socials-link footer-socials-link__instagram" href="#"><span class="hidden">Instagramm</span></a></li>
             </ul>            
           </div> 
         </div>
-        <div class="footer-block-information ">
+        <div class="footer-block-information top-line">
           <div class="footer-section-information yellow-stars">
             <p class= "star-text">Company Rating</p>
             <ul class="list-hidden-marker stars-list">
-              <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li class="star-item">
+              <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
               <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
               <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
               <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li> 
               <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li> 
             </ul>
           </div>
-          <p class="footer-section-information ">Copyright © 2018 Dlk • Design Life Kids</p>
+          <p class="footer-section-information Copyright-info">Copyright © 2018 Dlk • Design Life Kids</p>
           <a class="footer-section-information dl-info grey-text" href="#">Web Design — Direct Line Development</a>
         </div> 
       </div>
     </footer>    
-    <div class="modal-form">
-      <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-        <div>
+    <div class="modal-form modal-form_none modal-form_js">
+      <form class="contact-us-form modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+        <div class="form-wrapper600">
           <label class="label-input" for="input-name">Name</label>
-          <input class="form-input" name="name" id="input-name" type="text" placeholder="Ivan Ivanov">
+          <input class="form-input form-input_js" name="name" id="input-name" type="text" placeholder="Ivan Ivanov">
         </div>
-        <div>
-          <label class="label-input" for="input-phone">Phone</label>
-          <input class="form-input" name="phone" id="input-phone" type="tel">
-        </div>
-        <div>
-          <label class="label-input" for="input-email">Email</label>
-          <input class="form-input" name="email" id="input-email" type="email">
-        </div>
-        <div>
+        <div class="form-container">
+          <div class="form-wrapper290">
+            <label class="label-input" for="input-phone">Phone</label>
+            <input class="form-input" name="phone" id="input-phone" type="tel">
+          </div>
+          <div class="form-wrapper290">
+            <label class="label-input" for="input-email">Email</label>
+            <input class="form-input" name="email" id="input-email" type="email">
+          </div>
+        </div>          
+        <div class="form-wrapper600"> 
           <label class="label-input" for="input-massage">Massage</label>
-          <textarea class="form-input" name="message" id="input-massage" cols="30" rows="10"></textarea>
+          <textarea class="form-input" name="message" id="input-massage" cols="30" rows="6"></textarea>
         </div>
-        <div>
-          <input class="form-input" name="accept" id="input-accept" type="checkbox" value="accept">
-          <label class="label-input" for="input-accept" >By clicking on the button, you consent to the processing of your personal data</label>
+        <div class="form-checkbox-wrapper">
+          <input class="input-form-checkbox hidden" name="accept" id="form-accept" type="checkbox" value="accept">
+          <label class="form-label form-checkbox-indicator" for="form-accept">By clicking on the button, you consent to the processing of your personal data</label>
         </div>
-        <button class="button " type="submit">Submit</button>
-      </form>      
+        <button class="button-form button" type="submit">Submit</button>
+        <button class="button-close button-close_js" type="button"></button>
+      </form>
     </div>
-  </body>
+    <script src="/script.js">
+    </script>
+  </body>  
 </html>
