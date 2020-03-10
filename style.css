@@ -178,8 +178,9 @@
 }
 
 .product-desception {
-  width: 680px;
-  margin:45px 310px 59px 562px;
+  max-width: 680px;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 .desc-title {
@@ -458,10 +459,7 @@ margin: 0;
   position: relative;
 }
 
-.label-color-indicator:hover, .input-color:focus + .label-color-indicator {
-  cursor: pointer;
-  text-decoration: underline;
-}
+
 
 .label-color-indicator::before {
   position: absolute;
@@ -493,7 +491,7 @@ margin: 0;
   margin-left:-24px;
 }
 
-.label-shipping-indicator:hover, .input-shipping:focus + .label-shipping-indicator{
+.label-shipping-indicator:hover, .label-color-indicator:hover, .input-color:focus + .label-color-indicator, .input-shipping:focus + .label-shipping-indicator{
   cursor: pointer;
   text-decoration-line: underline;
 }
