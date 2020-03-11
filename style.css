@@ -178,9 +178,14 @@
 }
 
 .product-desception {
-  max-width: 680px;
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 60px;
+}
+
+.product-desception__inner {
+  max-width: 680px;
+  width: 100%;
+  margin-left: calc(100% / 12 * 2 + 4px );
 }
 
 .desc-title {
