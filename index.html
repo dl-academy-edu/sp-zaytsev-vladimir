@@ -4,99 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="/style.css"> 
     <title>DLK</title>
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/svg">
   </head>
   <body>
     <header class="header container">
-      <a href="/index.html">
-          <img class="header-logo" src="/images/logo.svg" alt="logo">
+      <a class="header-logo-link" href="/index.html">
+          <img class="header-logo-image" src="/images/logo.svg" alt="logo">
       </a>
       <nav class="header-nav">
-        <ul class="list-hidden-marker header-link-list">
-          <li><a class="nav-item" href="/pages/blog/index.html">BLOG</a></li>
-          <li><a class="nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
-          <li><a class="nav-item" href="#">ABOUT US</a></li>
+        <ul class="list-hidden-marker header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pages/blog/index.html">BLOG</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pages/catalog/index.html">CATALOG</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">ABOUT US</a>
+          </li>
         </ul>
-      </nav> 
-        <ul class="list-hidden-marker header-link-contact">
-        <li><a class="search-link" href="#"><img class="search-image" src="/images/search.svg" alt="search"></a></li>
-        <li><a class="contact-link" href="/pages/contact-us/index.html">CONTACT US</a></li>
-      </ul>                  
+        <ul class="list-hidden-marker header-contact-list">
+          <li class="header-contact-item">
+            <a class="header-search-link" href="#"><img class="search-image" src="/images/search.svg" alt="search"></a>
+          </li>
+          <li class="header-contact-item">
+            <a class="header-contact-link" href="/pages/contact-us/index.html">CONTACT US</a>
+          </li>
+        </ul> 
+      </nav>                        
     </header>
     <main class="main">      
       <section class="main-sliders container">
-        <p class="slider-number">01</p>
-        <ul class="sliders-buttons-list list-hidden-marker">
-          <li><button class="slider-button"></button></li>
-          <li><button class="slider-button"></button></li>
-          <li><button class="slider-button"></button></li>
-          <li><button class="slider-button"></button></li>
-        </ul>
-        <div class="slider-wrapper">
-          <div class="slider-1">
-            <div class="slider-desc">
+        <div class="slider-block">
+          <div class="slider-control">
+            <p class="slider-control-number">01</p>
+            <ul class="sliders-buttons-list list-hidden-marker">
+              <li class="slider-button-item"><button class="slider-button slider-button__one"></button></li>
+              <li class="slider-button-item"><button class="slider-button"></button></li>
+              <li class="slider-button-item"><button class="slider-button"></button></li>
+              <li class="slider-button-item"><button class="slider-button"></button></li>
+            </ul>
+          </div>          
+          <div class="slider-wrapper">
+            <div class="slider-1">
+              <div class="slider-desc">
+                <p class="slider-title">THE OOH NOO COLLECTION</p>
+                <p class="slider-text">Disagned in Slovenia</p>
+                <button class="slider-link button slider-link_js">EXPLORE NOW</button>
+              </div>          
+              <h2 class="hidden">Slider</h2>          
+              <img class="slider-image" src="/images/slider.png" alt="slider">          
+            </div>        
+            <!--<div class="slider-2">
+              <h2 class="hidden">Slider</h2>
               <p class="slider-title">THE OOH NOO <br> COLLECTION</p>
               <span class="slider-text">Disagned in Slovenia</span>
               <a class="slider-link button" href="#">EXPLORE NOW</a>
-            </div>          
-            <h2 class="hidden">Slider</h2>          
-            <img class="slider-image" src="/images/slider.png" alt="slider">          
-          </div>        
-          <!--<div class="slider-2">
-            <h2 class="hidden">Slider</h2>
-            <p class="slider-title">THE OOH NOO <br> COLLECTION</p>
-            <span class="slider-text">Disagned in Slovenia</span>
-            <a class="slider-link button" href="#">EXPLORE NOW</a>
-            <img class="slider-image" src="slider.png" alt="slider">          
-          </div>
-          <div class="slider-3">
-            <h2 class="hidden">Slider</h2>
-            <p class="slider-title">THE OOH NOO <br> COLLECTION</p>
-            <span class="slider-text">Disagned in Slovenia</span>
-            <a class="slider-link button" href="#">EXPLORE NOW</a>
-            <img class="slider-image" src="slider.png" alt="slider">          
-          </div>
-          <div class="slider-4">
-            <h2 class="hidden">Slider</h2>
-            <p class="slider-title">THE OOH NOO <br> COLLECTION</p>
-            <span class="slider-text">Disagned in Slovenia</span>
-            <a class="slider-link button" href="#">EXPLORE NOW</a>
-            <img class="slider-image" src="slider.png" alt="slider">          
-          </div>-->          
-        </div>        
+              <img class="slider-image" src="slider.png" alt="slider">          
+            </div>
+            <div class="slider-3">
+              <h2 class="hidden">Slider</h2>
+              <p class="slider-title">THE OOH NOO <br> COLLECTION</p>
+              <span class="slider-text">Disagned in Slovenia</span>
+              <a class="slider-link button" href="#">EXPLORE NOW</a>
+              <img class="slider-image" src="slider.png" alt="slider">          
+            </div>
+            <div class="slider-4">
+              <h2 class="hidden">Slider</h2>
+              <p class="slider-title">THE OOH NOO <br> COLLECTION</p>
+              <span class="slider-text">Disagned in Slovenia</span>
+              <a class="slider-link button" href="#">EXPLORE NOW</a>
+              <img class="slider-image" src="slider.png" alt="slider">          
+            </div>-->          
+          </div> 
+        </div>
         <p class="slider-discount-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>        
       </section>
       <section class="products container">
-        <h2 class="products-title title-2">Category Products</h2>
+        <h2 class="products-title title-2">CATEGORY PRODUCTS</h2>
         <ul class="products-list list-hidden-marker">
           <li class="product-item">
-            <a class="product-link" href="#">
-              <img class="product-img" src="/images/product-1.png" alt="APPAREL KIDS">
-              <h3 class="product-title">APPAREL <br> KIDS</h3>
+            <a class="product-link white-link" href="#">
+              <img class="product-image" src="/images/product-1.png" alt="APPAREL KIDS">
+              <h3 class="product-title">APPAREL KIDS</h3>
             </a>
           </li>
           <li class="product-item">
-            <a class="product-link" href="#">
-              <img class="product-img" src="/images/product-2.png" alt="HOLIDAY SHOP">
-              <h3 class="product-title">HOLIDAY <br> SHOP </h3>
+            <a class="product-link white-link" href="#">
+              <img class="product-image" src="/images/product-2.png" alt="HOLIDAY SHOP">
+              <h3 class="product-title">HOLIDAY SHOP </h3>
             </a>
           </li>
           <li class="product-item">
-            <a class="product-link" href="pages/catalog/toys/index.html">
-              <img class="product-img" src="/images/product-3.png" alt="TOYS">
+            <a class="product-link white-link" href="pages/catalog/toys/index.html">
+              <img class="product-image" src="/images/product-3.png" alt="TOYS">
               <h3 class="product-title">TOYS</h3>
             </a>
           </li>
           <li class="product-item">
-            <a class="product-link" href="#">
-              <img class="product-img" src="/images/product-4.png" alt="ACCESSORIES">
-              <h3 class="product-title">ACCESSORIES</h3></a>
+            <a class="product-link white-link" href="#">
+              <img class="product-image" src="/images/product-4.png" alt="ACCESSORIES">
+              <h3 class="product-title">ACCESSORIES</h3>
+            </a>
           </li>
         </ul>
         <div class="desception">
@@ -106,15 +123,16 @@
         </div>  
       </section>
       <section class="delivery container">        
-        <img class="delivery-image" src="/images/delivery.png" alt="Delivery">
-        <div class="delivery-text-container">
+        <img class="delivery-image" src="/images/delivery.png" alt="delivery">
+        <div class="delivery-text-block">
           <h2 class="delivery-title title-2">DELIVERY</h2>        
           <ul class="delivery-list list-hidden-marker">
-            <li><button class="delivery-item subtitle">Delivery</button></li>
-            <li><button class="delivery-item subtitle">Guarantee</button></li>
-            <li><button class="delivery-item subtitle">Credit</button></li>
+            <li class="delivery-item"><button class="delivery-button button-2 subtitle button__background">Delivery</button></li>
+            <li class="delivery-item"><button class="delivery-button button-2 subtitle">Guarantee</button></li>
+            <li class="delivery-item"><button class="delivery-button button-2 subtitle">Credit</button></li>
           </ul> 
-          <p class="delivery-text desc">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.<br> What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+          <p class="delivery-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+          <p class="delivery-text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
           <a class="delivery-link button" href="#">LEARN MORE</a>
         </div>        
       </section>
@@ -141,81 +159,94 @@
         </article>
       </div>      
     </main>
-    <footer class="footer container">      
-      <div class="footer-section">
-        <h4 class="footer-title grey-text">Navigation</h4>
-        <nav class="footer-navigation">
-            <ul class="footer-navigation-list list-hidden-marker">
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">About Us</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="/pages/blog/index.html">Blog</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Design Services</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Featured On</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">2018 Holiday Catalog</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Shop By Designer</a></li>            
-            </ul>
-        </nav>
-        <div class="footer-text yellow-stars">Company Rating
-            <ul class="list-hidden-marker stars-list">
-              <li><button class="button-star" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
-              <li><button class="button-star" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
-              <li><button class="button-star" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
-              <li><button class="button-star" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li> 
-              <li><button class="button-star" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li> 
-            </ul>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-block-content">
+          <div class="footer-section-content">
+            <p class="footer-title bottom-line grey-text">Navigation</p>
+            <nav class="footer-navigation">
+                <ul class="footer-navigation-list list-hidden-marker">
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">About Us</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="/pages/blog/index.html">Blog</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">Design Services</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">Featured On</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">2018 Holiday Catalog</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">Shop By Designer</a></li>            
+                </ul>
+            </nav>            
+          </div>
+          <div class="footer-section-content">
+            <p class="footer-title bottom-line grey-text">Customer Information</p>
+            <nav class="footer-navigation">
+                <ul class="footer-navigation-list list-hidden-marker">
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="/pages/contact-us/index.html">Contact Us</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">Sale Exclusions</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">Shipping & Returns</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">Terms & Conditions</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">Privacy Policy</a></li>
+                  <li class="footer-navigation-item"><a class="footer-navigation-link white-link" href="#">Search</a></li>            
+                </ul>
+            </nav>            
+          </div>
+          <div class="footer-section-content">
+            <p class="footer-title bottom-line grey-text">Connect</p>
+            <form class="footer-form">
+              <input class="footer-input" type="email" placeholder="Email"> 
+              <button class="button footer-button" type="submit" value="join">JOIN</button>              
+            </form>
+            <ul class="footer-socials-list list-hidden-marker">
+              <li class="footer-socials-item"><a class="footer-socials-link footer-socials-link__facebook" href="#"><span class="hidden">Facebook</span></a></li>
+              <li class="footer-socials-item"><a class="footer-socials-link footer-socials-link__twitter" href="#"><span class="hidden">Twitter</span></a></li>
+              <li class="footer-socials-item"><a class="footer-socials-link footer-socials-link__pinterest" href="#"><span class="hidden">Pinteres</span></a></li>
+              <li class="footer-socials-item"><a class="footer-socials-link footer-socials-link__instagram" href="#"><span class="hidden">Instagramm</span></a></li>
+            </ul>            
+          </div> 
         </div>
-      </div>
-      <div class="footer-section">
-        <h4 class="footer-title grey-text">Customer Information</h4>
-        <nav class="footer-navigation">
-            <ul class="footer-navigation-list list-hidden-marker">
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="/pages/contact-us/index.html">Contact Us</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Sale Exclusions</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Shipping & Returns</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Terms & Conditions</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Privacy Policy</a></li>
-              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Search</a></li>            
+        <div class="footer-block-information top-line">
+          <div class="footer-section-information yellow-stars">
+            <p class= "star-text">Company Rating</p>
+            <ul class="list-hidden-marker stars-list">
+              <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
+              <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
+              <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li>
+              <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li> 
+              <li class="star-item"><button class="button-star button-2" type="button"><img class="image-star" src="/images/star.svg" alt="star"></button></li> 
             </ul>
-        </nav>
-        <p class="footer-text">Copyright © 2018 Dlk • Design Life Kids</p>
+          </div>
+          <p class="footer-section-information Copyright-info">Copyright © 2018 Dlk • Design Life Kids</p>
+          <a class="footer-section-information dl-info grey-text" href="#">Web Design — Direct Line Development</a>
+        </div> 
       </div>
-      <div class="footer-section">
-        <h4 class="footer-title grey-text">Connect</h4>
-        <form class="footer-form">
-            <input type="email" placeholder="Email" > <button type="submit" value="join">JOIN</button>
-        </form>
-        <ul class="footer-socials-list list-hidden-marker">
-            <li class="footer-socials-item"><a class="footer-socials-link">Facebook</a></li>
-            <li class="footer-socials-item"><a class="footer-socials-link">Twitter</a></li>
-            <li class="footer-socials-item"><a class="footer-socials-link">Pinterest</a></li>
-            <li class="footer-socials-item"><a class="footer-socials-link">Instagram</a></li>
-        </ul>
-        <p class="footer-text grey-text">Web Design — Direct Line Development</p>
-      </div>      
     </footer>    
-    <div class="modal-form">
-      <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-        <p>
+    <div class="modal-form modal-form_none modal-form_js">
+      <form class="contact-us-form modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+        <div class="form-wrapper600">
           <label class="label-input" for="input-name">Name</label>
-          <input class="form-input" name="name" id="input-name" type="text">
-        </p>
-        <p>
-          <label class="label-input" for="input-phone">Phone</label>
-          <input class="form-input" name="phone" id="input-phone" type="tel">
-        </p>
-        <p>
-          <label class="label-input" for="input-email">Email</label>
-          <input class="form-input" name="email" id="input-email" type="email">
-        </p>
-        <p>
+          <input class="form-input form-input_js" name="name" id="input-name" type="text" placeholder="Ivan Ivanov">
+        </div>
+        <div class="form-container">
+          <div class="form-wrapper290">
+            <label class="label-input" for="input-phone">Phone</label>
+            <input class="form-input" name="phone" id="input-phone" type="tel">
+          </div>
+          <div class="form-wrapper290">
+            <label class="label-input" for="input-email">Email</label>
+            <input class="form-input" name="email" id="input-email" type="email">
+          </div>
+        </div>          
+        <div class="form-wrapper600"> 
           <label class="label-input" for="input-massage">Massage</label>
-          <textarea class="form-input" name="message" id="input-massage" cols="30" rows="10"></textarea>
-        </p>
-        <p>
-          <input class="form-input" name="accept" id="input-accept" type="checkbox" value="accept">
-          <label class="label-input" for="input-accept" >By clicking on the button, you consent to the processing of your personal data</label>
-        </p>
-        <button type="submit">Submit</button>
-      </form>      
+          <textarea class="form-input" name="message" id="input-massage" cols="30" rows="6"></textarea>
+        </div>
+        <div class="form-checkbox-wrapper">
+          <input class="input-form-checkbox hidden" name="accept" id="form-accept" type="checkbox" value="accept">
+          <label class="form-label form-checkbox-indicator" for="form-accept">By clicking on the button, you consent to the processing of your personal data</label>
+        </div>
+        <button class="button-form button" type="submit">Submit</button>
+        <button class="button-close button-close_js" type="button"></button>
+      </form>
     </div>
-  </body>
+    <script src="/script.js">
+    </script>
+  </body>  
 </html>
