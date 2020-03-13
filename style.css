@@ -252,6 +252,13 @@
   padding-left: 60px;
   text-align: start;
   box-sizing: border-box;
+  background: transparent;
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  border: 0;
 }
 
 .delivery-button:hover , .delivery-button:active , .delivery-button:focus{
@@ -324,6 +331,11 @@
 
 .dlk-subtitle {
   margin: 10px 0 10px 0; 
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
 }
 
 .dlk-about-text {

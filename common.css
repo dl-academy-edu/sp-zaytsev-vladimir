@@ -87,12 +87,6 @@ a {
   line-height: 32px;
 }
 
-.button-2 {
-  background: transparent;
-  border: 0;
-  
-}
-
 .breadcrumbs-list {
   padding: 0;
   display: flex;
@@ -280,6 +274,8 @@ a {
 
 .button-star {
   padding: 0;
+  background: transparent;
+  border: 0;
 }
 
 .footer-form {  
