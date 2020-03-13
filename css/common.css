@@ -10,9 +10,6 @@ a {
   color: #1E0606;
 }
 
-.white-link {
-  color: #FFFFFF;
-}
 
 .container {
   width: 100%;
@@ -59,7 +56,7 @@ a {
 }
 
 .title-block {
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .main-title {
@@ -77,14 +74,6 @@ a {
   font-size: 38px;
   line-height: 46px;  
   text-transform: uppercase;
-}
-
-.subtitle {
-  font-family: Crimson Text;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 32px;
 }
 
 .breadcrumbs-list {
@@ -236,6 +225,13 @@ a {
 
 .footer-navigation-item {
   margin-bottom: 15px;
+}
+
+.footer-navigation-link {
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
 }
 
 .footer-navigation-link:hover , .footer-navigation-link:focus {
