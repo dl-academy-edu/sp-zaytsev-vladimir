@@ -289,13 +289,17 @@ a {
 
 .footer-input {
   background-color: #666666;
-  color: #EBEBEB;
+  
   border: 1px solid transparent;
   display: flex;
   align-items: center;
   width: 100%;
   padding: 9px 15px;
   box-sizing: border-box; 
+}
+
+.footer-input::placeholder {
+  color: #EBEBEB;
 }
 
 .footer-input:hover {
@@ -307,8 +311,7 @@ a {
 .footer-input:focus {
   cursor: none;
   border-color: white;
-  background-color: #FFFFFF;
-  color: #1E0606;
+  color: #EBEBEB;
 }
 
 .footer-button {

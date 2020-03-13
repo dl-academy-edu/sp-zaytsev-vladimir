@@ -54,12 +54,12 @@
       </section>  
       <section class="toys-filter"> 
         <h2 class="hidden">toys filter</h2>       
-        <form class="toys-form container" action="" method="POST">
+        <form class="toys-form container" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
           <fieldset class="fieldset-border-none toy-form-section">
             <legend class="toy-form-section-name">Cost</legend>
-            <label for="">0</label>
-            <input class="" type="range" name="cost" min="0" max="500" value="100">
-            <label for="">500</label>
+            <label for="input-range">0</label>
+            <input class="input-range" type="range" name="cost" min="0" max="500" value="100" id="input-range">
+            <label for="input-range">500</label>
           </fieldset>
           <fieldset class="fieldset-border-none toy-form-section">
             <legend class="toy-form-section-name">Color</legend>
