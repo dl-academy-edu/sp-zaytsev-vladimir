@@ -1,7 +1,7 @@
 /*sliders*/
 
 .main-sliders {
-  margin-top: 78px;
+  margin-top: 77px;
   margin-bottom: 90px;
 }
 
@@ -204,7 +204,7 @@
 .desception {
   display: flex;
   align-items: center; 
-  margin:21px 0;   
+  margin:20px 0;   
 }
 
 .desception-button {
@@ -215,8 +215,11 @@
 }
 
 .desception-text {
-  margin: 0 0 0 14px;
+  margin: 0 0 0 15px;
   width: 580px;
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /*delivery*/
@@ -236,8 +239,8 @@
 }
 
 .delivery-title {
-  margin-top: 32px;
-  margin-bottom: 8px;
+  margin-top: 33px;
+  margin-bottom: 5px;
 }
 
 .delivery-list {
@@ -266,13 +269,16 @@
 }
 
 
-.button__background {
+.delivery-button__default {
   background-color: #E1F0F7;
 }
 
 .delivery-text {
   width: 480px;
   margin-bottom: 15px;
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .delivery-link {
@@ -290,7 +296,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 90px;
-  margin-bottom: 109px;
+  margin-bottom: 113px;
   padding: 0;
 }
 
