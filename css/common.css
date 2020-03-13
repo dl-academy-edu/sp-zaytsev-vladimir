@@ -25,6 +25,11 @@ a {
   display: none;
 }
 
+.opacity {
+  opacity: 0;
+}
+
+
 .fieldset-border-none {
   border: none;
   width: fit-content;
@@ -427,15 +432,13 @@ a {
 
 .form-checkbox-wrapper {
   margin-bottom: 20px;
-}
-
-.opacity {
-  opacity: 0;
+  display: flex;
+  align-items: center;
 }
 
 .form-checkbox-indicator {
-  margin-left: -16px;
-  padding-left:30px;
+  margin-left: -14px;
+  padding-left:35px;
   position: relative;
 }
 
@@ -468,6 +471,14 @@ a {
   background-image: url(/images/checkbox.svg);  
 }
 
+.form-input__name::placeholder {
+  content: "";
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1E0606;
+}
+
 .button-close {
   position: absolute;
   width: 15px;
@@ -480,7 +491,12 @@ a {
   right: -25px;
 }
 
-.button-close:hover {
+.button-form:disabled {
+  background-color: #C1C1C1;
+  color: #E1E1E1;;
+}
+
+.button-close:hover, .button-close:focus {
   opacity: 0.5;
   cursor: pointer;
   transform: rotate(90deg);
@@ -490,6 +506,8 @@ a {
   opacity: 0.3;
   cursor: none;
 }
+
+
 
 .modal-form {
   background-color: rgba(125, 151, 218, 0.8);

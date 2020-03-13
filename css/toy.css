@@ -1,0 +1,244 @@
+/*Toys*/
+
+.toys-filter {
+  margin-top: 48px;
+  background-color: rgba(125, 151, 218, 0.2);
+}
+
+.toys-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 45px 0;
+}
+
+.toy-form-section-list {
+  padding: 0;
+  margin: 15px 0;
+}
+
+.toy-form-section-item {
+  margin-bottom: 15px;
+}
+
+.toy-form-section-name {
+  font-weight: bold;
+  padding: 0;
+}
+
+.filter-button {
+  margin: 30px 0;
+}
+
+.label-color-indicator {
+  margin-left: -24px;
+  padding-left:30px;
+  position: relative;
+}
+
+.label-color-indicator::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 19px;
+  border: 2px solid #C29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.input-color:checked + .label-color-indicator::after {
+  position: absolute;
+  content: "";
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url(/images/checkbox.svg);
+}
+
+.label-shipping-indicator {
+  position: relative;
+  padding-left:30px;
+  margin-left:-24px;
+}
+
+.label-shipping-indicator:hover, .label-color-indicator:hover, .input-color:focus + .label-color-indicator, .input-shipping:focus + .label-shipping-indicator{
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.label-shipping-indicator::before {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C29974;
+  border-radius: 100%;
+}
+
+.input-shipping:checked + .label-shipping-indicator::after{
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  background-color: #C29974;
+}
+
+.amount-content {
+  display: flex;
+}
+
+.label-amount {
+  background-color: #FFFFFF;
+  width: 80px;
+  margin-top: -22px;
+  padding: 7px 19px;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+}
+
+.label-amount:hover, .input-amount:focus + .label-amount {
+  background-color: #EDDEEB;
+  cursor: pointer;
+}
+
+.input-amount:checked + .label-amount { 
+  background-color: #F3D0DB;  
+}
+
+.toys-content {
+  padding: 60px 0;
+}
+
+.toy-preview {
+  max-width: 33.33%;
+  margin: 10px;
+  block-size: border-box;
+  position: relative;
+}  
+
+.toys-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -10px 30px -10px;
+}
+
+.toy-image {
+  background-color: #E5EAF8;  
+  background: no-repeat;
+}
+
+.toy-text {
+  padding: 30px 0 25px 0;
+}
+
+.toy-name {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.toy-price {
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+margin: 0;
+}
+
+.toy-learn-more-text {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.toy-learn-more {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translateY(calc(-50% - 59px)) translateX(-50%);
+  opacity: 0;
+  width: 207px;
+  height: 207px;
+  background-color: #E5EAF8;  
+  transition: 0.4s;
+}
+
+.toy-link:hover > .toy-learn-more, .toy-link:focus > .toy-learn-more {
+  opacity: 0.9;
+  transform: translateY(calc(-50% - 59px)) translateX(-50%);
+  
+}
+
+.toy-link:active > .toy-learn-more {  
+  opacity: 0.67;
+}
+
+/*page navigation*/
+
+.page-navigation {
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-navigation-list {
+  display: flex;
+  padding: 0;  
+  margin-left: 65px; 
+}
+
+.page-navigation-item {
+  margin-right: 64px;
+}
+
+.page-navigation-link__one {
+  color: #C29974;
+}
+
+.page-navigation-control:hover .page-control-vector, .page-navigation-control:focus  .page-control-vector{
+  stroke:#C29974;
+  stroke-opacity: 1;
+  cursor: pointer;
+}
+
+.page-navigation-control:active .page-control-vector{
+  stroke:#C29974;
+  stroke-opacity: 0.5;
+  cursor: none;
+}
+
+.page-navigation-link:hover , .page-navigation-link:focus{
+  color: #1E0606;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.page-navigation-link:active {
+  color: #C29974;
+  cursor: none;
+}
