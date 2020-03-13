@@ -204,7 +204,7 @@
 .desception {
   display: flex;
   align-items: center; 
-  margin:20px 0;   
+  margin:21px 0 22px 0;   
 }
 
 .desception-button {
@@ -239,8 +239,8 @@
 }
 
 .delivery-title {
-  margin-top: 33px;
-  margin-bottom: 5px;
+  margin-top: 31px;
+  margin-bottom: 9px;
 }
 
 .delivery-list {
@@ -296,7 +296,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 90px;
-  margin-bottom: 113px;
+  margin-bottom: 112px;
   padding: 0;
 }
 
@@ -330,13 +330,13 @@
 }
 
 .dlk-title {
-  margin-top: -24px;
+  margin-top: -25px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .dlk-subtitle {
-  margin: 10px 0 10px 0; 
+  margin: 12px 0 10px 0; 
   font-family: Crimson Text;
   font-style: italic;
   font-weight: normal;
@@ -345,8 +345,10 @@
 }
 
 .dlk-about-text {
-  margin-top: 10px;
+  margin-top: 9px;
   margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .dlk-about-link {
@@ -366,7 +368,9 @@
 }
 
 .contacts-map-text {
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .contatcs-map-image {
