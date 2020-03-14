@@ -33,7 +33,7 @@
         </ul>
         <ul class="list-hidden-marker header-contact-list">
           <li class="header-contact-item">
-            <a class="header-search-link" href="#"><img class="search-image" width="17.2" height="17.58" src="/images/search.svg" alt="search"></a>
+            <a class="header-search-link" href="#"><img class="search-image" src="/images/search.svg" alt="search"></a>
           </li>
           <li class="header-contact-item">
             <a class="header-contact-link" href="/pages/contact-us/index.html">CONTACT US</a>
@@ -55,58 +55,58 @@
       <section class="toys-filter"> 
         <h2 class="hidden">toys filter</h2>       
         <form class="toys-form container" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-          <fieldset class="fieldset-border-none toy-form-section">
-            <legend class="toy-form-section-name">Cost</legend>
-            <label for="input-range">0</label>
+          <fieldset class="form-section-cost fieldset-border-none">
+            <legend class="form-section-cost-name">Cost</legend>
+            <label class="label-range" for="input-range">0</label>
             <input class="input-range" type="range" name="cost" min="0" max="500" value="100" id="input-range">
-            <label for="input-range">500</label>
+            <label class="label-range" for="input-range">500</label>
           </fieldset>
-          <fieldset class="fieldset-border-none toy-form-section">
-            <legend class="toy-form-section-name">Color</legend>
-            <ul class="toy-form-section-list list-hidden-marker">
-              <li class="toy-form-section-item">
+          <fieldset class="form-section-color fieldset-border-none">
+            <legend class="form-section-color-name">Color</legend>
+            <ul class="form-section-color-list list-hidden-marker">
+              <li class="form-section-color-item">
                 <input  class="input-color opacity" name="color-toys" type="checkbox" id="input-color-black" value="black">
                 <label class="label-color label-color-indicator " for="input-color-black">Black</label>
               </li>
-              <li class="toy-form-section-item">
+              <li class="form-section-color-item">
                 <input class="input-color opacity" name="color-toys" type="checkbox" id="input-color-blue" value="blue">
                 <label class="label-color label-color-indicator" for="input-color-blue">Blue</label>
               </li>
-              <li class="toy-form-section-item">
+              <li class="form-section-color-item">
                 <input class="input-color opacity" name="color-toys" type="checkbox" id="input-color-green" value="green">
                 <label class="label-color label-color-indicator" for="input-color-green">Green</label>
               </li>
-              <li class="toy-form-section-item">
+              <li class="form-section-color-item">
                 <input class="input-color opacity" name="color-toys" type="checkbox" id="input-color-white" value="white">
                 <label class="label-color label-color-indicator" for="input-color-white">White</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="fieldset-border-none toy-form-section">
-            <legend class="toy-form-section-name">Delivery</legend>
-            <ul class="toy-form-section-list list-hidden-marker">
-              <li class="toy-form-section-item">
+          <fieldset class="form-section-shipping fieldset-border-none">
+            <legend class="form-section-shipping-name">Delivery</legend>
+            <ul class="form-section-shipping-list list-hidden-marker">
+              <li class="form-section-shipping-item">
                 <input class="input-shipping opacity" id="input-free-shipping" name="shipping-methods" type="radio" value="free">
                 <label class="label-shipping label-shipping-indicator" for="input-free-shipping">Free shipping</label>                                  
               </li>
-              <li class="toy-form-section-item">
+              <li class="form-section-shipping-item">
                 <input class="input-shipping opacity" id="input-fast-shipping" name="shipping-methods" type="radio" value="fast" checked>
                 <label class="label-shipping label-shipping-indicator" for="input-fast-shipping">Fast shipping</label>                  
               </li>
             </ul>
           </fieldset>
-          <fieldset class="fieldset-border-none toy-form-section">
-            <legend class="toy-form-section-name">Amount</legend>
-            <ul class="toy-form-section-list amount-content list-hidden-marker">
-              <li class="toy-form-section-item">
+          <fieldset class="form-section-amount fieldset-border-none">
+            <legend class="form-section-amount-name">Amount</legend>
+            <ul class="form-section-amount-list list-hidden-marker">
+              <li class="form-section-amount-item">
                 <input class="input-amount opacity" type="radio" id="input-amount-1" name="amount" value="0-5" checked>
                 <label class="label-amount" for="input-amount-1">0-5</label>
               </li>
-              <li class="toy-form-section-item">
+              <li class="form-section-amount-item">
                 <input class="input-amount opacity" type="radio" id="input-amount-2" name="amount" value="10-20">
                 <label class="label-amount" for="input-amount-2">10-20</label>
               </li>
-              <li class="toy-form-section-item">
+              <li class="form-section-amount-item">
                 <input class="input-amount opacity" type="radio" id="input-amount-3" name="amount" value="20-50">
                 <label class="label-amount" for="input-amount-3">20-50</label>
               </li>
@@ -116,7 +116,7 @@
         </form>        
       </section>
       <section class="toys-content container">
-        <h2 class="hidden">toys</h2>
+        <h2 class="hidden">Toys list</h2>
         <div class="toys-list ">
           <article class="toy-preview">
             <h2 class="hidden">toy</h2>
