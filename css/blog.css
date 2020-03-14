@@ -1,7 +1,7 @@
 /*Blog*/
 
 .blog-content {
-  padding-bottom: 44px;
+  padding-bottom: 47px;
 }
 
 .blogs-list {
@@ -31,7 +31,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #818181;
-  margin: 15px 0 0 0;
+  margin: 17px 0 0 0;
 }
 
 .blog-preview-title {
@@ -51,7 +51,7 @@
 /*page navigation*/
 
 .page-navigation {
-  margin-top: 30px;
+  margin-top: 27px;
   font-family: Montserrat;
   font-weight: bold;
   font-size: 16px;
