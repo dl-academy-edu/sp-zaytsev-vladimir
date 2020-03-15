@@ -27,7 +27,7 @@
 }
 
 .blog-preview-data {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #818181;
@@ -35,7 +35,7 @@
 }
 
 .blog-preview-title {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
@@ -52,7 +52,7 @@
 
 .page-navigation {
   margin-top: 27px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;

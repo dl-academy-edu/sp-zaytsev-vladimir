@@ -13,7 +13,7 @@
 }
 
 .form-section-cost-name, .form-section-color-name, .form-section-shipping-name, .form-section-amount-name {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -38,7 +38,7 @@
 }
 
 .label-color, .label-shipping, .label-amount {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
@@ -151,8 +151,7 @@
 }
 
 .toy-image {
-  background-color: #E5EAF8;  
-  background: no-repeat;
+  background-color: #E5EAF8;
 }
 
 .toy-text {
@@ -176,7 +175,7 @@
 }
 
 .toy-learn-more-text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 29px;
@@ -211,7 +210,7 @@
 
 .page-navigation {
   margin-top: 27px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;

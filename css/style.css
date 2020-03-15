@@ -13,7 +13,7 @@
 }
 
 .slider-control-number {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 60px;
   line-height: 73px;
@@ -71,14 +71,14 @@
 
 .slider-title {
   margin: 0 0 20px 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 110%;
 }
 
 .slider-text {
-  font-family: Crimson Text;
+  font-family: Crimson Text, serif;
   font-style: italic;
   font-size: 20px;
   line-height: 25px;
@@ -94,7 +94,7 @@
 }
 
 .slider-discount-text {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -115,7 +115,7 @@
   left: 50%;
   transform: translate( -50%, -50%);
   margin: 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
@@ -199,9 +199,7 @@
 
 .desc-text {
   margin:15px 0;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
@@ -222,7 +220,7 @@
 .desception-text {
   margin: 0 0 0 15px;
   width: 580px;
-  font-family: Open Sans;
+  font-family: Open Sans,sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
@@ -245,20 +243,18 @@
 }
 
 .delivery-title {
-  margin-top: 31px;
-  margin-bottom: 6px;
+  margin: 31px 0 9px 0;
 }
 
 .delivery-list {
   padding:0;
-  margin:0 0 19px 0; 
+  margin:9px 0 19px 0; 
 }
 
 .delivery-button{
   width:326px;
   margin-left:-60px;
-  padding: 11px 0;
-  padding-left: 60px;
+  padding: 11px 0 11px 60px;
   text-align: start;
   box-sizing: border-box;
   background: transparent;
@@ -282,7 +278,7 @@
 .delivery-text {
   width: 480px;
   margin-bottom: 15px;
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
@@ -291,8 +287,6 @@
   margin-top: 10px;
   display: inline-block;
 }
-
-
 
 
 /*partners*/
@@ -327,7 +321,8 @@
   align-items: baseline;
   padding-bottom: 60px;
   margin-bottom: 87px;
-  padding-right: calc(100% / 24 - 15px);  
+  padding-right: calc(100% / 24 - 40px);  
+  box-sizing: border-box;
 }
 
 .dlk-about { 
@@ -340,14 +335,14 @@
 }
 
 .dlk-title {
-  margin-top: -25px;
+  margin-top: -24px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .dlk-subtitle {
   margin: 12px 0 10px 0; 
-  font-family: Crimson Text;
+  font-family: Crimson Text, serif;
   font-style: italic;
   font-weight: normal;
   font-size: 26px;
@@ -401,7 +396,7 @@
 }
 
 .contact-us-text-block {
-  max-width: 380px;
+  max-width: 33.33%;
   width: 100%;
 }
 
@@ -412,7 +407,7 @@
 }
 
 .contact-us-bigtext {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;

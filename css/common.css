@@ -1,5 +1,6 @@
 body {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
   margin: 0;
   color: #1E0606;
   background-color: #FFFFFF;
@@ -65,7 +66,7 @@ a {
 }
 
 .main-title {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -74,7 +75,7 @@ a {
 }
 
 .title-2 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 38px;
   line-height: 46px;  
@@ -89,7 +90,7 @@ a {
 
 .breadcrumbs-item {
   margin-right: 20px;
-  font-family: Crimson Text;
+  font-family: Crimson Text, serif;
   font-style: italic;
   font-size: 20px;
   line-height: 25px;
@@ -233,7 +234,7 @@ a {
 }
 
 .footer-navigation-link {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
@@ -387,9 +388,7 @@ a {
   margin-right: 60px;
   padding: 42px 40px;
   background-color: #E5EAF8;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -415,7 +414,7 @@ a {
 
 .label-input {
   margin-bottom: 6px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -473,7 +472,7 @@ a {
 
 .form-input__name::placeholder {
   content: "";
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #1E0606;
