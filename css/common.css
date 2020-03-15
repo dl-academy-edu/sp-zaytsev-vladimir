@@ -1,5 +1,6 @@
 body {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
   margin: 0;
   color: #1E0606;
   background-color: #FFFFFF;
@@ -10,9 +11,6 @@ a {
   color: #1E0606;
 }
 
-.white-link {
-  color: #FFFFFF;
-}
 
 .container {
   width: 100%;
@@ -27,6 +25,11 @@ a {
 .hidden {
   display: none;
 }
+
+.opacity {
+  opacity: 0;
+}
+
 
 .fieldset-border-none {
   border: none;
@@ -59,11 +62,11 @@ a {
 }
 
 .title-block {
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .main-title {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -72,25 +75,11 @@ a {
 }
 
 .title-2 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 38px;
   line-height: 46px;  
   text-transform: uppercase;
-}
-
-.subtitle {
-  font-family: Crimson Text;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 32px;
-}
-
-.button-2 {
-  background: transparent;
-  border: 0;
-  
 }
 
 .breadcrumbs-list {
@@ -101,7 +90,7 @@ a {
 
 .breadcrumbs-item {
   margin-right: 20px;
-  font-family: Crimson Text;
+  font-family: Crimson Text, serif;
   font-style: italic;
   font-size: 20px;
   line-height: 25px;
@@ -244,6 +233,13 @@ a {
   margin-bottom: 15px;
 }
 
+.footer-navigation-link {
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
 .footer-navigation-link:hover , .footer-navigation-link:focus {
   opacity: 0.5;
   cursor: pointer;
@@ -280,6 +276,8 @@ a {
 
 .button-star {
   padding: 0;
+  background: transparent;
+  border: 0;
 }
 
 .footer-form {  
@@ -289,13 +287,17 @@ a {
 
 .footer-input {
   background-color: #666666;
-  color: #EBEBEB;
+  
   border: 1px solid transparent;
   display: flex;
   align-items: center;
   width: 100%;
   padding: 9px 15px;
   box-sizing: border-box; 
+}
+
+.footer-input::placeholder {
+  color: #EBEBEB;
 }
 
 .footer-input:hover {
@@ -307,8 +309,7 @@ a {
 .footer-input:focus {
   cursor: none;
   border-color: white;
-  background-color: #FFFFFF;
-  color: #1E0606;
+  color: #EBEBEB;
 }
 
 .footer-button {
@@ -387,9 +388,7 @@ a {
   margin-right: 60px;
   padding: 42px 40px;
   background-color: #E5EAF8;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -415,7 +414,7 @@ a {
 
 .label-input {
   margin-bottom: 6px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -432,15 +431,13 @@ a {
 
 .form-checkbox-wrapper {
   margin-bottom: 20px;
-}
-
-.opacity {
-  opacity: 0;
+  display: flex;
+  align-items: center;
 }
 
 .form-checkbox-indicator {
-  margin-left: -16px;
-  padding-left:30px;
+  margin-left: -14px;
+  padding-left:35px;
   position: relative;
 }
 
@@ -473,6 +470,14 @@ a {
   background-image: url(/images/checkbox.svg);  
 }
 
+.form-input__name::placeholder {
+  content: "";
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1E0606;
+}
+
 .button-close {
   position: absolute;
   width: 15px;
@@ -485,7 +490,12 @@ a {
   right: -25px;
 }
 
-.button-close:hover {
+.button-form:disabled {
+  background-color: #C1C1C1;
+  color: #E1E1E1;;
+}
+
+.button-close:hover, .button-close:focus {
   opacity: 0.5;
   cursor: pointer;
   transform: rotate(90deg);
